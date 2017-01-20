@@ -32,6 +32,7 @@
 package com.jme3.renderer;
 
 import com.jme3.material.RenderState;
+import com.jme3.material.cons.BlendEquation;
 import com.jme3.math.ColorRGBA;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;
@@ -103,7 +104,7 @@ public class RenderContext {
     /**
      * @see RenderState#setBlendEquation(com.jme3.material.RenderState.BlendEquation) 
      */
-    public RenderState.BlendEquation blendEquation = RenderState.BlendEquation.Add;
+	public BlendEquation blendEquation = BlendEquation.Add;
     
     /**
      * @see RenderState#setBlendEquationAlpha(com.jme3.material.RenderState.BlendEquationAlpha) 
@@ -264,7 +265,7 @@ public class RenderContext {
         polyOffsetUnits = 0;
         pointSize = 1;
         blendMode = RenderState.BlendMode.Off;
-        blendEquation = RenderState.BlendEquation.Add;
+		blendEquation = BlendEquation.Add;
         blendEquationAlpha = RenderState.BlendEquationAlpha.InheritColor;
         wireframe = false;
         boundShaderProgram = 0;
